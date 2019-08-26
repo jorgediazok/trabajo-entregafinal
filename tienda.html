@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda en línea</title>
+    <script type="text/javascript" src="tienda.js"></script>
+    <link rel="stylesheet" type="text/css" href="tienda.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+
+  <body onload="ListCar();">
+    <nav class="nav-principal">
+      <a href="index.html"><img src="images/logo4.jpg" class="foto-nav"/></a>
+      <ul class="nav-items">
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="caja-titulo">
+        <h2>Elegí el modelo de remera</h2>
+      </div>
+      <div class="form">
+        <input type="hidden" id="txtOperacion" />
+        <input
+          type="number"
+          placeholder="Modelo"
+          min="1"
+          max="3"
+          required=""
+          id="txtID"
+        />
+        <input
+          type="number"
+          placeholder="Cantidad"
+          min="1"
+          max="10"
+          required=""
+          id="txtCantidad"
+        />
+        <input
+          type="text"
+          placeholder="Nombre y apellido"
+          required=""
+          id="txtName"
+        />
+        <input type="text" placeholder="Dirección" required="" id="txtPhone" />
+        <input type="date" placeholder="Entrega" required="" id="txtEmail" />
+        <div class="text-right">
+          <button type="button" id="btnSave" onClick="GuardarCar();">
+            Agregar
+          </button>
+          <button type="button" id="btn" onClick="resetearCampos();">
+            Reset
+          </button>
+        </div>
+      </div>
+      <table id="tblList" class="table"></table>
+      <button type="button" id="finalizarCompra" onclick="finalizarCompra();">
+        Finalizar Compra
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  background-image: url(images/tsoy23.jpg);
+  background-size: cover;
+  font-family: "Kalam", cursive;
+  color: black;
+}
+
+h1 {
+  color: #e0ca5b;
+  text-align: center;
+}
+
+.formulario {
+  color: midnightblue;
+  width: 20%;
+}
+
+.sugerencias {
+  margin-top: 20px;
+}
+
+.boton {
+  background: #e0ca5b;
+  border-radius: 1000px;
+  padding: 8px 20px;
+  color: black;
+  display: inline-block;
+  font: normal bold 16px/1 "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  border: 0;
+}
+
+#reproductor {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #e0ca5b;
+}

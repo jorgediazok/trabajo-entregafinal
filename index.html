@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Coiny&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="./lib/swipebox/src/css/swipebox.min.css" />
+    <link
+      rel="stylesheet"
+      href="./lib/justified-gallery/css/justifiedGallery.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+   
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/95cc901799.js"></script>
+    
+    
+    <title>Homenaje a Viktor Tsoi</title>
+    
+  </head>
+
+  <body>
+
+    <!-- Para que chrome me deje usar el autoplay -->
+
+    <iframe
+      src="silence.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display:none"
+    ></iframe>
+
+    <nav class="nav-principal">
+        <a href="index.html"><img src="images/logo4.jpg" class="foto-nav"/></a>
+        <ul class="nav-items">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main></main>
+
+    <section id="reproductor">
+      <video
+        id="period"
+        width="720"
+        height="400"
+        loop
+        poster="images/tsoy3.jpg"
+      >
+        <source src="videos/Кино - Место для шага вперед.mp4" />
+        <source src="videos/Кино - Место для шага вперед.ogg" />
+      </video>
+      <div id="botonera">
+        <button id="reiniciar" onclick="reiniciar()"><i class="far fa-stop-circle fa-3x"></i></button>
+        <button id="atras" onclick="saltar(-10)"><i class="fas fa-backward fa-3x"></i></button>
+        <button id="reproducir" onclick="reproducir()"><i class="far fa-play-circle fa-3x"></i></button>
+        <button id="adelante"onclick= "saltar(10)"><i class="fas fa-forward fa-3x"></i></button>
+        </button>
+      </div>
+    </section>
+
+    <h1>Grupo Kino en imágenes</h1>
+
+    <div class="fotos-principal">
+      <a
+        href="images/tsoy6.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy6.jpg" />
+      </a>
+      <a
+        href="images/tsoy7.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy7.jpg" />
+      </a>
+      <a href="images/tsoy8.jpg" title="Tsoy">
+        <img src="images/tsoy8.jpg" />
+      </a>
+      <a href="images/tsoy9.jpg" title="Tsoy">
+        <img src="images/tsoy9.jpg" />
+      </a>
+      <a href="images/tsoy10.jpg" title="Tsoy">
+        <img src="images/tsoy10.jpg" />
+      </a>
+      <a href="images/tsoy11.jpg" title="Tsoy">
+        <img src="images/tsoy11.jpg" />
+      </a></div>
+      <br />
+      <div class="fotos-principal">
+      <a href="images/tsoy12.jpg" title="Tsoy">
+        <img src="images/tsoy12.jpg" />
+      </a>
+      <a
+        href="images/tsoy13.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy13.jpg" />
+      </a>
+      <a
+        href="images/tsoy14.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy14.jpg" />
+      </a>
+    </div>
+    <br />
+    <div class="fotos-principal">
+      <a href="images/tsoy15.jpg" title="Tsoy">
+        <img src="images/tsoy15.jpg" />
+      </a>
+      <a
+        href="images/tsoy16.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy16.jpg" />
+      </a>
+      <a href="images/tsoy17.jpg" title="Tsoy">
+        <img src="images/tsoy17.jpg" />
+      </a>
+      <a
+        href="images/tsoy18.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy18.jpg" />
+      </a>
+      <a href="images/tsoy19.jpg" title="Tsoy">
+        <img src="images/tsoy19.jpg" />
+      </a>
+      <a href="images/tsoy20.jpg" title="Tsoy">
+        <img src="images/tsoy20.jpg" />
+      </a>
+      <a
+        href="images/tsoy21.jpg"
+        title="Tsoy"
+      >
+        <img src="images/tsoy21.jpg" />
+      </a>
+    </div>
+
+    
+      <header class= "cabecera-cards">
+      <h2>Conseguí las mejores remeras personalizadas</h2>
+      <p>Totalmente importadas de Rusia, conseguilas en nuestra <a href="tienda.html" target="_blank"><span class="en-linea">Tienda en Linea</span></a></p>
+      </header>
+
+<div class="centrado">
+
+ <section class="cards">
+
+      <article class="card">
+        <a class="a-tienda" href="tienda.html" target="_blank">
+        <div class="card-content">
+            <h3>Modelo 1</h3>
+            <h2>Precio: $20 dolares</h2>
+            <p>Envío Gratis</p>
+            <p>Talles variados</p>
+            <p>Recibila en 10 días</p>
+            <figure class="thumbnail">
+            <img src="remeras/remera1.jpg" title="modelo 1" class="img-card"> 
+            </figure>
+        </div>
+        </a>
+      </article>
+      
+      
+      <article class="card">
+        <a class="a-tienda" href="tienda.html" target="_blank">
+          <div class="card-content">
+              <h3>Modelo 2</h3>
+              <h2>Precio: $18 dólares</h2>
+              <p>Envío Gratis</p>
+              <p>Talles Variados</p>
+              <p>Recibila en 10 días</p>
+              <figure class="thumbnail">
+              <img src="remeras/remera2.jpg" title="modelo 2" class="img-card">
+              </figure>
+            </div>
+            </a>
+        </article>
+          
+        
+
+        <article class="card">
+          <a class="a-tienda" href="tienda.html" target="_blank">
+            <div class="card-content">
+                <h3>Modelo 3</h3>
+                <h2>Precio: $15 dólares</h2>
+                <p>Envío Gratis</p>
+                <p>Talles Variados</p>
+                <p>Recibila en 10 días</p>
+                <figure>
+                <img src="remeras/remera3.jpg" title="modelo 3" class="img-card">
+                </figure>
+              </div>
+            </a>
+            </article>
+          
+          
+
+
+        </div>
+      
+      
+</section>
+
+<section id="reproductor2">
+    <video
+      id="period2"
+      width="720"
+      height="400"
+      loop
+      poster="images/tsoy7.jpg"
+    >
+      <source src="videos/Kino-pesnaslob.mp4" />
+    </video>
+    <div id="botonera2">
+      <button id="reiniciar2" onclick="reiniciar2()"><i class="far fa-stop-circle fa-3x"></i></button>
+      <button id="atras2" onclick="saltar2(-10)"><i class="fas fa-backward fa-3x"></i></button>
+      <button id="reproducir2" onclick="reproducir2()"><i class="far fa-play-circle fa-3x"></i></button>
+      <button id="adelante2"onclick= "saltar2(10)"><i class="fas fa-forward fa-3x"></i></button>
+      </button>
+    </div>
+  </section>
+  
+  <div id="contenedor">
+  <canvas id="lienzo" width="1000px" height="500px"></canvas>
+  </div>
+
+    <footer id="footer">
+     <a href="www.facebook.com/blablainventado"><i class="social-icon fab fa-facebook-f fa-3x"></i></a>
+      <a href="www.twitter.com/blablainventado"><i class="social-icon fab fa-twitter fa-3x"></i></a>
+      <a href="www.instagram.com/blablainventado"><i class="social-icon fab fa-instagram fa-3x"></i></a>
+     <a href="jorgediazok@gmail.com"><i class="social-icon fas fa-envelope fa-3x"></i></a>
+      <p>© Copyright 2019 Jorge Web Development</p>
+    </footer>
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-2.1.0.min.js"
+      integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lib/swipebox/src/js/jquery.swipebox.min.js"></script>
+    <script src="./lib/justified-gallery/js/jquery.justifiedGallery.js"></script>
+
+    <script>
+      $('.fotos-principal').each(function(i, el) {
+        $(el)
+          .justifiedGallery({
+            rel: 'gal' + i,
+            lastRow: 'center',
+            margins: 15,
+          })
+          .on('jg.complete', function() {
+            if (i == 0) $('.fotos-principal a').swipebox(); //swipebox, wants to be called only once to work properly
+          });
+      });
+    </script>
+
+
+
+    <!--Index JS-->
+    <script src="index.js"></script>
+     
+  </body>
+</html>
