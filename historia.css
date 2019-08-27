@@ -58,6 +58,34 @@ nav a {
   text-decoration: none;
 }
 
+#reproductor {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #e0ca5b;
+  padding-top:20px;
+}
+
+.mymove {
+  width: 300px;
+  height: 30px;
+  position: relative;
+  -webkit-animation: mymove 15s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 15s infinite;
+  animation-direction: alternate;
+  animation-delay: 0;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 250px;}
+  to {left: 800px;}
+}
+
+@keyframes mymove {
+  from {left: 250px;}
+  to {left: 800px;}
+}
+
 .centrado {
   margin: 0 auto;
   padding: 0 0.8em;
@@ -73,7 +101,7 @@ nav a {
   font-size: 2em;
   font-weight: 600;
   text-align: center;
-  color: #fdc806;
+  color: #e0ca5b;
   padding: 20px;
 }
 
