@@ -5,10 +5,12 @@
   text-decoration: none;
   border: none;
   outline: none;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Kalam", cursive;
+  background: white;
 }
 
 main {
@@ -59,6 +61,8 @@ a:active {
   color: #fdc806;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.8s ease;
+
 }
 
 
@@ -128,6 +132,11 @@ h1 {
   border: solid 2px #fdc806;
 }
 
+.card:hover{
+  background: linear-gradient(whitesmoke,white);
+  transition: 1s;
+}
+
 .a-tienda {
   font-size: 1em;
   text-align: center;
@@ -155,6 +164,7 @@ h1 {
 
 .en-linea:hover {
   color: #fdc806;
+
 }
 
 /*reproductor 2*/
@@ -205,10 +215,6 @@ h1 {
 
 /*logo en svg*/
 
-.contenedor-svg{
-justify-items: center;
-}
-
 svg {
   display: inline-block;
   width: 150px;
@@ -217,20 +223,20 @@ svg {
 }
 
 svg:hover {
-    stroke: white;
-  }
+  stroke: white;
+}
 
-.corazon svg:hover {
-    stroke: white;
-  }
+
 
 path {
-  fill: none;
+  fill:none;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 5px;
   transition: 1s;
 }
+
+
 .letter--k {
   width: 200px;
   margin-left: 280px;
@@ -243,22 +249,24 @@ path {
 }
 
 .letter--h{
-  width:180px;
+  width:190px;
   height: 270px;
 }
 
 .corazon{
   width:250px;
   height:270px;
+  stroke: red;
 }
+
 
 
 /*gif*/
 
 .gif{
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 /*footer*/

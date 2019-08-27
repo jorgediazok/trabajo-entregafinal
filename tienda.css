@@ -54,6 +54,8 @@ a:active {
   color: #fdc806;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.8s ease;
+
 }
 
 .container {
@@ -138,6 +140,10 @@ input {
   cursor: pointer;
 }
 
+#btnSave:hover{
+  background: #073763;
+}
+
 #btn {
   background: #3d85c6;
   background: linear-gradient(#3d85c6, #073763);
@@ -149,6 +155,10 @@ input {
   text-align: center;
   text-shadow: 1px 1px #000000;
   cursor: pointer;
+}
+
+#btn:hover{
+  background:#073763;
 }
 
 .table {
@@ -182,4 +192,8 @@ input {
   margin-left: 670px;
   margin-top: 270px;
   cursor: pointer;
+}
+
+#finalizarCompra:hover{
+  background:#073763;
 }

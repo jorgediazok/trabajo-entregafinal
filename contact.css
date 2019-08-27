@@ -5,6 +5,11 @@ body {
   color: black;
 }
 
+.titulo{
+  height: 80px;
+  width: 100%;
+}
+
 h1 {
   color: #e0ca5b;
   text-align: center;
@@ -29,6 +34,7 @@ h1 {
   text-align: center;
   margin-top: 15px;
   border: 0;
+  cursor: pointer;
 }
 
 #reproductor {
