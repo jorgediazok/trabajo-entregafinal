@@ -1,11 +1,11 @@
-var selected_index = -1; //Index of the selected ListCar item
+var selected_index = -1; 
 
-var dataCars = localStorage.getItem("dataCars"); //Retrieve the stored data
+var dataCars = localStorage.getItem("dataCars"); 
 
-dataCars = JSON.parse(dataCars); //Converts string to object
+dataCars = JSON.parse(dataCars); 
 
 if (dataCars == null)
-  //If there is no data, initialize an empty array
+  
   dataCars = [];
 
 function ListCar() {
@@ -43,7 +43,7 @@ function ListCar() {
     datos += "</tr>";
   }
   datos += "</tbody>";
-  //datos += "</table>";
+
   document.getElementById("tblList").innerHTML = datos;
   document.getElementById("txtOperacion").value = "A";
   document.getElementById("txtID").value = "";
@@ -86,9 +86,9 @@ function EditCar(selected_index) {
     Name: document.getElementById("txtName").value,
     Phone: document.getElementById("txtPhone").value,
     Email: document.getElementById("txtEmail").value
-  }); //Alter the selected item on the table
+  }); 
   localStorage.setItem("dataCars", JSON.stringify(dataCars));
-  //alert("Dato Editado Correctamente")
+  
 
   ListCar();
   return true;
