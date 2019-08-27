@@ -61,6 +61,7 @@ a:active {
   cursor: pointer;
 }
 
+
 /*reproductor*/
 
 #reproductor {
@@ -199,6 +200,65 @@ h1 {
   background: url(images/grid.jpg);
   margin-left: 20px;
   margin-bottom: 170px;
+}
+
+
+/*logo en svg*/
+
+.contenedor-svg{
+justify-items: center;
+}
+
+svg {
+  display: inline-block;
+  width: 150px;
+  stroke: black;
+
+}
+
+svg:hover {
+    stroke: white;
+  }
+
+.corazon svg:hover {
+    stroke: white;
+  }
+
+path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5px;
+  transition: 1s;
+}
+.letter--k {
+  width: 200px;
+  margin-left: 280px;
+  margin-right:-60px;
+}
+
+.letter--i {
+  width: 200px;
+  height: 250px;
+}
+
+.letter--h{
+  width:180px;
+  height: 270px;
+}
+
+.corazon{
+  width:250px;
+  height:270px;
+}
+
+
+/*gif*/
+
+.gif{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*footer*/

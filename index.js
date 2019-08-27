@@ -242,6 +242,8 @@ ctx.lineTo(910,100);
 ctx.lineTo(970,200);
 ctx.fill();
 
+
+
 /*Tierra 1
 ctx.beginPath();
 ctx.fillStyle = "rgba(0,180,10,"+alfa+")";
@@ -333,15 +335,7 @@ var grd = ctx.createLinearGradient(26,300,100,300); //de arriba a abajo, si quie
 grd.addColorStop(0,"red");
 grd.addColorStop(1,"yellow");
 ctx.fillStyle = grd;
-ctx.fillRect(26,300,100,100);
+ctx.fillRect(26,300,100,100);*/
 
 // ctx.createLinearGradient(x1,y1,r,x2,y2,r2) para circulos
-var grd2 = ctx.createRadialGradient(890,350,5,900,350,120); //de arriba a abajo, si quiero de izquierda a derecha tengo que poner (26,300,0,300), si quiero en diagonal (26,300,0,400)
-grd2.addColorStop(0,"white");
-grd2.addColorStop(1,"black");
-ctx.beginPath();
-ctx.arc(900,400,100,0,7);
-ctx.fillStyle = grd2;
-ctx.fill();
 
-*/
